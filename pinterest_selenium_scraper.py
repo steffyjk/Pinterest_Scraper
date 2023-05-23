@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 from dotenv import load_dotenv
 load_dotenv()
 # Directory path for saving images
-output_dir = "/home/root380/Desktop/STEFFY_GITHUB/scrapping/Pinterest_Scraper/OUTPUTS"
+output_dir = os.getenv("OUT_DIR_PATH")
 
 # Create the output directory if it doesn't exist
 os.makedirs(output_dir, exist_ok=True)
